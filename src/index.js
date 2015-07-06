@@ -3,7 +3,7 @@ var express = require('express'),
 	apiErrorHandler = require('api-error-handler'),
 	expressDomainMiddleware = require('express-domain-middleware'),
 	_ = require('lodash'),
-	heroku1BeRouter = require('./user/heroku1BeRouter');
+	heroku1BeRouter = require('./heroku1BeRouter');
 
 var app = express()
 app.use(bodyParser.json())

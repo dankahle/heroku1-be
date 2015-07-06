@@ -9,10 +9,10 @@ if (process.env.NODE_ENV == 'production')
 else
 	connstr = 'mongodb://localhost:27017/db';
 
-console.log('mongo connected to:', process.env.NODE_ENV == 'production'? 'mongolab': 'localhost');
+console.log('heroku1-be mongo:', connstr);
 var db = mongoose.createConnection(connstr)
 db.on('error', function (err) {
-	console.error(err);
+	console.error('heroku1-be:', err);
 })
 
 var userSchema = mongoose.Schema({
